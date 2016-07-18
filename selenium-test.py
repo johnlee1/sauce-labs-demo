@@ -2,6 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
+import os
 
 SAUCE_USERNAME = os.environ.get('SAUCE_USERNAME')
 SAUCE_ACCESS_KEY = os.environ.get('SAUCE_ACCESS_KEY')
