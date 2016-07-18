@@ -6,7 +6,7 @@ import os
 
 SAUCE_USERNAME = os.environ.get('SAUCE_USERNAME')
 SAUCE_ACCESS_KEY = os.environ.get('SAUCE_ACCESS_KEY')
-print SAUCE_USERNAME
+
 
 # This is the only code you need to edit in your existing scripts.
 # The command_executor tells the test to run on Sauce, while the desired_capabilities
@@ -24,6 +24,8 @@ driver = webdriver.Remote(
 # This is your test logic. You can add multiple tests here.
 driver.implicitly_wait(10)
 driver.get("http://127.0.0.1:5000/")
+
+print driver.page_source
 
 link = driver.find_element_by_name('about')
 link.click()
