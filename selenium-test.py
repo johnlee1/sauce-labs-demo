@@ -25,6 +25,8 @@ driver = webdriver.Remote(
 driver.implicitly_wait(10)
 driver.get("http://127.0.0.1:5000/")
 
+print driver.page_source
+
 link = driver.find_element_by_name('about')
 link.click()
 
