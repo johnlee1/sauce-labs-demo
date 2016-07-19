@@ -17,15 +17,13 @@ desired_cap = {
     'version': "31",
 }
 driver = webdriver.Remote(
-   command_executor='http://'+SAUCE_USERNAME+':'+SAUCE_ACCESS_KEY+'@ondemand.saucelabs.com:80/wd/hub',
+   command_executor='http://'+SAUCE_USERNAME+':'+SAUCE_ACCESS_KEY+'@localhost:4445/wd/hub',
    desired_capabilities=desired_cap)
   
 
 # This is your test logic. You can add multiple tests here.
 driver.implicitly_wait(10)
 driver.get("http://127.0.0.1:5000/")
-
-print driver.page_source
 
 link = driver.find_element_by_name('about')
 link.click()
