@@ -1,7 +1,7 @@
 # sauce-labs-demo
-This repository contains a sample flask application with automated selenium testing using Sauce Labs.
+This repository contains a sample flask application with automated selenium testing using Sauce Labs and Sauce Connect.
 
-The tests are triggered and run on codeship.
+The tests are triggered and run on codeship as part of the continuous integration process.
 
 # codeship setup
 ###Setup commands 
